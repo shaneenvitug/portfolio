@@ -36,17 +36,17 @@
     2. Global CSS
 ====================================== */
 
-*, 
-::after, 
+*,
+::after,
 ::before {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;    
+    font-size: 15px;
     line-height: 30px;
-    font-weight: 400;       
+    font-weight: 400;
     color: #a88590;
     background-color: #fff;
     overflow-x: hidden;
@@ -54,7 +54,7 @@ body {
 
 body a {
     text-decoration: none;
-    color: #000000;    
+    color: #000000;
     transition: color .3s linear;
 }
 
@@ -84,7 +84,7 @@ body img {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 50%;    
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -117,7 +117,7 @@ a.button {
 
 a.button:active {
     position: relative;
-    top: 1px;   
+    top: 1px;
 }
 
 a.button:hover {
@@ -139,7 +139,7 @@ a.button:hover {
 }
 
 .content-left::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #554247;
 }
 
@@ -203,7 +203,7 @@ a.button:hover {
 
 #toggle.on:before {
     -webkit-transform: rotate3d(0, 0, 1, 45deg) translate3d(0, 0, 0);
-    transform: rotate3d(0, 0, 1, 45deg) translate3d(0, 0, 0);   
+    transform: rotate3d(0, 0, 1, 45deg) translate3d(0, 0, 0);
     background-color: #fff;
     margin-left: 0;
     width: 26px;
@@ -246,10 +246,10 @@ a.button:hover {
     padding-top: 150px;
 }
 
-.top-pagination > div {
+.top-pagination>div {
     display: inline-block;
     font-weight: 700;
-    vertical-align: top; 
+    vertical-align: top;
 }
 
 .current-num {
@@ -260,8 +260,8 @@ a.button:hover {
 }
 
 .current-num span {
-    position: absolute;    
-    left: 0;    
+    position: absolute;
+    left: 0;
 }
 
 .total-pages-num {
@@ -293,7 +293,7 @@ a.button:hover {
     margin-bottom: 30px;
 }
 
-.my-info > p {
+.my-info>p {
     margin-bottom: 0;
 }
 
@@ -385,6 +385,7 @@ img.my-info-signature {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         -webkit-transform: translateY(35px);
@@ -396,6 +397,7 @@ img.my-info-signature {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         -webkit-transform: translateY(35px);
@@ -449,8 +451,8 @@ img.my-info-signature {
 }
 
 .sm-clean a,
-.sm-clean a:hover, 
-.sm-clean a:focus, 
+.sm-clean a:hover,
+.sm-clean a:focus,
 .sm-clean a:active {
     color: #ffffff;
     padding: 5px 0;
@@ -477,14 +479,14 @@ img.my-info-signature {
     bottom: 20px;
 }
 
-.sm-clean a.current:after, 
-.sm-clean a:hover:after, 
-.sm-clean a:active:after, 
-.sm-clean a.highlighted:after, 
-.sm-clean ul a:hover:after, 
-.sm-clean ul a:active:after, 
+.sm-clean a.current:after,
+.sm-clean a:hover:after,
+.sm-clean a:active:after,
+.sm-clean a.highlighted:after,
+.sm-clean ul a:hover:after,
+.sm-clean ul a:active:after,
 .sm-clean ul a.highlighted:after,
-.sm-clean li.current > a:after {
+.sm-clean li.current>a:after {
     width: 110%;
 }
 
@@ -508,7 +510,7 @@ img.my-info-signature {
     width: calc(100% - 380px);
 }
 
-.content-right-wrapper > div:last-of-type {
+.content-right-wrapper>div:last-of-type {
     padding-bottom: 150px;
 }
 
@@ -557,7 +559,7 @@ h2.section-title {
 .home-right-part {
     flex: 1 0 0;
     height: 100%;
-    background-image: url(images/home.jpg);
+    background-image: url(images/me.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -585,7 +587,7 @@ h1.entry-title {
 }
 
 .social-links a {
-    font-size: 12px;    
+    font-size: 12px;
     color: #492D31;
     letter-spacing: 5px;
     margin-right: 30px;
@@ -602,9 +604,9 @@ h1.entry-title {
 
 .services-wrapper {
     display: flex;
-    display: -webkit-flex; 
-    flex-wrap: wrap;    
-    -webkit-flex-wrap: wrap; 
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
 }
 
 .service-holder {
@@ -631,11 +633,11 @@ h1.entry-title {
     margin-top: 50px;
 }
 
-.button-group-wrapper > a {
+.button-group-wrapper>a {
     margin-right: 1vw;
 }
 
-.button-group-wrapper > a:last-of-type {
+.button-group-wrapper>a:last-of-type {
     margin-right: 0;
 }
 
@@ -658,14 +660,14 @@ h1.entry-title {
 
 .category-filter.hide {
     opacity: 0;
-    transform: translateY(70px);   
-}    
+    transform: translateY(70px);
+}
 
-.category-filter-list > div {
+.category-filter-list>div {
     margin-bottom: 5px;
 }
 
-.category-filter-list > div:last-of-type {
+.category-filter-list>div:last-of-type {
     margin-bottom: 0;
 }
 
@@ -688,13 +690,13 @@ h1.entry-title {
     width: 10px;
     height: 3px;
     background-color: #f37b83;
-    transform: translate(-5px,8px);
+    transform: translate(-5px, 8px);
     transition: transform .3s ease;
 }
 
-.category-filter:hover .category-filter-icon:after, 
+.category-filter:hover .category-filter-icon:after,
 .category-filter.filter-open .category-filter-icon:after {
-    transform: translate(4px,8px);
+    transform: translate(4px, 8px);
 }
 
 .category-filter-icon:before {
@@ -703,13 +705,13 @@ h1.entry-title {
     width: 10px;
     height: 3px;
     background-color: #f37b83;
-    transform: translate(10px,11px);
+    transform: translate(10px, 11px);
     transition: transform .3s ease;
 }
 
 .category-filter:hover .category-filter-icon:before,
 .category-filter.filter-open .category-filter-icon:before {
-    transform: translate(14px,11px);
+    transform: translate(14px, 11px);
 }
 
 .category-filter-list {
@@ -729,7 +731,7 @@ h1.entry-title {
 }
 
 .category-filter-list.hide {
-    transform: translateY(70px);   
+    transform: translateY(70px);
     opacity: 0;
 }
 
@@ -759,9 +761,9 @@ h1.entry-title {
     float: left;
     font-size: 0;
     line-height: 0;
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     overflow: hidden;
     border: 30px solid transparent;
     width: 50%;
@@ -773,7 +775,7 @@ h1.entry-title {
     width: 100%;
     height: auto;
     max-height: none;
-    max-width: none;    
+    max-width: none;
 }
 
 .grid-sizer,
@@ -901,10 +903,10 @@ h1.entry-title {
 
 #portfolio-grid.hide {
     opacity: 0;
-    transform: translateY(70px);    
+    transform: translateY(70px);
 }
 
-.grid-item a.item-link.portfolio-content-loading:after, 
+.grid-item a.item-link.portfolio-content-loading:after,
 .ajax-portfolio.portfolio-content-loading .portfolio-text-holder {
     opacity: 1;
 }
@@ -920,7 +922,7 @@ div.pp_default .pp_loaderIcon {
 
 div.pp_default a.pp_arrow_previous {
     background-image: url(images/nav_left.png);
-    background-size: 20px 20px;    
+    background-size: 20px 20px;
     width: 20px;
     height: 20px;
     margin-top: 5px;
@@ -932,7 +934,7 @@ div.pp_default a.pp_arrow_previous {
 
 div.pp_default a.pp_arrow_next {
     background-image: url(images/nav_right.png);
-    background-size: 20px 20px;    
+    background-size: 20px 20px;
     width: 20px;
     height: 20px;
     margin-top: 5px;
@@ -957,7 +959,7 @@ div.pp_default .pp_close {
     margin-top: 5px;
     text-indent: -99999999px;
     font-size: 0;
-    line-height: 0;    
+    line-height: 0;
 }
 
 div.pp_default .pp_next:hover {
@@ -973,7 +975,7 @@ div.pp_default .pp_previous:hover {
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: 5% 50%;
-    background-size: 20px;    
+    background-size: 20px;
 }
 
 div.pp_default .pp_nav .currentTextHolder {
@@ -1023,7 +1025,7 @@ div.pp_default .pp_description {
     width: 100%;
 }
 
-.owl-theme .owl-nav.disabled + .owl-dots {
+.owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 20px;
     line-height: 0;
 }
@@ -1092,19 +1094,19 @@ li.timeline-event:last-child {
 }
 
 li.timeline-event span.timeline-circle:after {
-    content: "";    
+    content: "";
     position: absolute;
     width: 19px;
     height: 19px;
     left: -8px;
     top: 11px;
     border-radius: 90%;
-    background-color: #f37b83;    
+    background-color: #f37b83;
     opacity: 0;
     transition: opacity .3s;
 }
 
-li.timeline-event:hover span.timeline-circle:after { 
+li.timeline-event:hover span.timeline-circle:after {
     opacity: 1;
 }
 
@@ -1149,7 +1151,7 @@ li.timeline-event:hover .timeline-event-date {
 
 img.my-signature {
     padding-top: 30px;
-    width: 215px; 
+    width: 215px;
 }
 
 
@@ -1157,7 +1159,7 @@ img.my-signature {
     9. Skills Section CSS
 ====================================== */
 
-.skill-circle-holder > div:last-of-type {
+.skill-circle-holder>div:last-of-type {
     margin-right: 0;
 }
 
@@ -1198,7 +1200,7 @@ p.skill-circle-text {
     position: relative;
 }
 
-.skills-holder > div:last-of-type {
+.skills-holder>div:last-of-type {
     margin-bottom: 0;
 }
 
@@ -1263,8 +1265,8 @@ p.skill-circle-text {
     margin-bottom: 15px;
 }
 
-.contact-form input[type=text], 
-.contact-form input[type=email], 
+.contact-form input[type=text],
+.contact-form input[type=email],
 .contact-form textarea {
     border: 0;
     border-bottom: 2px solid #fff;
@@ -1316,37 +1318,37 @@ p.contact-submit-holder {
     opacity: 0.8;
 }
 
-.contact-form input[type=text]::-webkit-input-placeholder, 
-.contact-form input[type=email]::-webkit-input-placeholder, 
+.contact-form input[type=text]::-webkit-input-placeholder,
+.contact-form input[type=email]::-webkit-input-placeholder,
 .contact-form textarea::-webkit-input-placeholder {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-weight: 400;
     font-size: 14px;
-    line-height: 25px;    
-    opacity: 1;  
+    line-height: 25px;
+    opacity: 1;
 }
 
-.contact-form input[type=text]:-ms-input-placeholder, 
-.contact-form input[type=email]:-ms-input-placeholder, 
+.contact-form input[type=text]:-ms-input-placeholder,
+.contact-form input[type=email]:-ms-input-placeholder,
 .contact-form textarea:-ms-input-placeholder {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-weight: 400;
     font-size: 14px;
-    line-height: 25px;    
-    opacity: 1;  
+    line-height: 25px;
+    opacity: 1;
 }
 
-.contact-form input[type=text]::placeholder, 
-.contact-form input[type=email]::placeholder, 
+.contact-form input[type=text]::placeholder,
+.contact-form input[type=email]::placeholder,
 .contact-form textarea::placeholder {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-weight: 400;
     font-size: 14px;
     line-height: 25px;
-    opacity: 1;    
+    opacity: 1;
 }
 
 
@@ -1391,8 +1393,8 @@ p.contact-submit-holder {
         padding-top: 75px;
     }
 
-    .content-right-wrapper > div:last-of-type {
-        padding-bottom: 75px;        
+    .content-right-wrapper>div:last-of-type {
+        padding-bottom: 75px;
     }
 
     .top-pagination,
@@ -1418,13 +1420,13 @@ p.contact-submit-holder {
 
 @media screen and (min-width: 1360px) and (max-width: 1550px) {
 
-    .button-group-wrapper > .button {
+    .button-group-wrapper>.button {
         display: table;
         margin-left: 0;
         margin-bottom: 20px;
     }
 
-    .button-group-wrapper > a:last-of-type {
+    .button-group-wrapper>a:last-of-type {
         margin-bottom: 0;
     }
 
@@ -1448,7 +1450,7 @@ p.contact-submit-holder {
 }
 
 @media screen and (max-width: 1360px) {
-   
+
 
     .portfolio-content .one-half {
         margin-bottom: 30px;
@@ -1479,7 +1481,7 @@ p.contact-submit-holder {
 
     .menu-wrapper {
         padding-top: 0;
-    }  
+    }
 
     .service-holder {
         margin-right: 2vw;
@@ -1496,14 +1498,14 @@ p.contact-submit-holder {
 
     .skills-holder.sec-skills-holder {
         margin-top: -60px;
-    }    
+    }
 
 }
 
 
 @media screen and (max-width: 1300px) {
- 
- .one-half {
+
+    .one-half {
         width: 100%;
         margin-bottom: 60px;
         margin-right: 0;
@@ -1513,7 +1515,7 @@ p.contact-submit-holder {
         margin-bottom: 0;
     }
 
-    .one-half > p:last-of-type {
+    .one-half>p:last-of-type {
         margin-bottom: 0;
     }
 
@@ -1546,8 +1548,8 @@ p.contact-submit-holder {
 
     .content-right {
         margin-left: 0;
-        width: 100%;        
-    }         
+        width: 100%;
+    }
 
     .service-title {
         font-size: 25px;
@@ -1562,12 +1564,12 @@ p.contact-submit-holder {
         right: 0;
     }
 
-    .grid-sizer, 
+    .grid-sizer,
     .grid-item {
         width: 50% !important;
         border-width: 15px;
-    }     
-    
+    }
+
     .close-icon {
         width: 60px;
         height: 60px;
@@ -1578,7 +1580,7 @@ p.contact-submit-holder {
         text-align: center;
     }
 
-    .skill-circle-holder > div:nth-of-type(2n) {
+    .skill-circle-holder>div:nth-of-type(2n) {
         margin-right: 0 !important;
     }
 
@@ -1589,7 +1591,7 @@ p.contact-submit-holder {
         margin-right: 10% !important;
     }
 
-    .skill-circle-holder > div:nth-last-of-type(-n+2) {
+    .skill-circle-holder>div:nth-last-of-type(-n+2) {
         margin-bottom: 0 !important;
     }
 
@@ -1599,7 +1601,7 @@ p.contact-submit-holder {
 
 }
 
-@media screen and (max-height: 880px) {    
+@media screen and (max-height: 880px) {
 
     .big-num {
         display: none;
@@ -1607,18 +1609,18 @@ p.contact-submit-holder {
 
 }
 
-@media screen and (max-width: 767px) {  
+@media screen and (max-width: 767px) {
 
     .full-width-section .section-wrapper {
         height: auto;
         padding: 75px 5%;
-    }  
+    }
 
-    .content-right-wrapper > div:first-of-type .section-wrapper {
+    .content-right-wrapper>div:first-of-type .section-wrapper {
         padding-top: 125px;
     }
 
-    .single-portfolio .content-right-wrapper > div:first-of-type .section-wrapper {
+    .single-portfolio .content-right-wrapper>div:first-of-type .section-wrapper {
         padding-top: 55px;
     }
 
@@ -1628,7 +1630,7 @@ p.contact-submit-holder {
     }
 
     .home-right-part {
-        display: none;    
+        display: none;
     }
 
     h1.entry-title {
@@ -1638,15 +1640,15 @@ p.contact-submit-holder {
 
     .site-des {
         font-size: 20px;
-    }   
+    }
 
-    .service-holder {       
+    .service-holder {
         margin-bottom: 30px !important;
         width: 100%;
         margin-right: 0;
-    }  
+    }
 
-    .services-wrapper > div:last-of-type {
+    .services-wrapper>div:last-of-type {
         margin-bottom: 0 !important;
     }
 
@@ -1654,30 +1656,30 @@ p.contact-submit-holder {
         margin-top: 30px;
     }
 
-    .category-filter-list {        
+    .category-filter-list {
         top: 0;
     }
 
     .grid {
         width: 100%;
-        margin: 0;    
+        margin: 0;
     }
 
     .category-filter {
-        top: -30px;        
+        top: -30px;
     }
 
-    .grid-sizer, 
+    .grid-sizer,
     .grid-item {
         width: 100% !important;
     }
 
     .grid-item {
         border: 0;
-        margin-bottom: 30px;    
+        margin-bottom: 30px;
     }
 
-    #portfolio-grid > div:last-of-type {
+    #portfolio-grid>div:last-of-type {
         margin-bottom: 0;
     }
 
@@ -1707,7 +1709,7 @@ p.contact-submit-holder {
 
     .skill-circle-holder {
         display: block !important;
-    }     
+    }
 
     .skill-text {
         width: 100%;
@@ -1733,7 +1735,7 @@ p.contact-submit-holder {
 
 }
 
-@media screen and (max-width: 650px) {     
+@media screen and (max-width: 650px) {
 
     .menu-holder {
         width: 100%;
@@ -1743,20 +1745,20 @@ p.contact-submit-holder {
         overflow: auto;
     }
 
-    .button-group-wrapper > a:last-of-type {
+    .button-group-wrapper>a:last-of-type {
         margin-bottom: 0;
     }
 
-    .skill-circle-holder > div:nth-of-type(n) {
+    .skill-circle-holder>div:nth-of-type(n) {
         display: table !important;
         width: 100%;
         margin-left: auto !important;
         margin-right: auto !important;
     }
 
-    .skill-circle-holder > div:nth-last-of-type(2) {
+    .skill-circle-holder>div:nth-last-of-type(2) {
         margin-bottom: 40px !important;
-    }    
+    }
 
     .skill-circle-wrapper canvas {
         max-width: none;
@@ -1765,12 +1767,12 @@ p.contact-submit-holder {
 
 }
 
-@media screen and (max-width: 480px) {    
+@media screen and (max-width: 480px) {
 
-    .button-group-wrapper > .button {
-        display: table; 
+    .button-group-wrapper>.button {
+        display: table;
         margin-left: 0;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
 
 }
