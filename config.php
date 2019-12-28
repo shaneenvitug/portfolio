@@ -1,6 +1,6 @@
 <?php
 
 //SITE GLOBAL CONFIGURATION
-$email = "shaneenvitug@gmail.com";   //<-- Your email
+$email = "hello@shaneenvitug.com";   //<-- Your email
 
 ?>
