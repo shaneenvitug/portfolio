@@ -54,12 +54,12 @@ body {
 
 body a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     transition: color .3s linear;
 }
 
 body a:hover {
-    color: #acacac;
+    color: #e8ce69;
 }
 
 body img {
