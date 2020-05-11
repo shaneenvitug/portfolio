@@ -290,7 +290,7 @@
                 var getPortfolioItemHtml = $(html).find(".portfolio-item-wrapper").html();
                 $('.portfolio-load-content-holder').append('<div id="pcw-' + portfolioItemID + '" class="portfolio-content-wrapper">' + getPortfolioItemHtml + '</div>');
                 if (!$("#pcw-" + portfolioItemID + " .close-icon").length) {
-                    $("#pcw-" + portfolioItemID).prepend('<div class="close-icon"></div>');
+                    $("#pcw-" + portfolioItemID).prepend('<a class="close-icon">Back to projects</a>');
                 }
                 $('html, body').animate({scrollTop: $('#portfolio-wrapper').offset().top - 150}, 400);
                 setTimeout(function () {

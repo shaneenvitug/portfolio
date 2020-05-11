@@ -141,6 +141,7 @@ a.button {
     border-radius: 50px;
     transition: all .2s linear;
     margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 a.button:active {
@@ -285,7 +286,7 @@ a.button:hover {
     width: 25px;
     position: relative;
     height: 30px;
-    color: #c6646b;
+    color: #f17cac;
     display: none;
 }
 
@@ -357,7 +358,7 @@ img.my-info-signature {
 
 .current-big-num {
     font-size: 160px;
-    -webkit-text-stroke: 3px #c6646b;
+    -webkit-text-stroke: 3px #f17cac;
     color: transparent;
     font-weight: 800;
     line-height: 100%;
@@ -379,7 +380,7 @@ img.my-info-signature {
     margin-left: -20px;
     bottom: 25px;
     margin-top: -35px;
-    box-shadow: inset 0 0 0 3px #c6646b;
+    box-shadow: inset 0 0 0 3px #f17cac;
     border-radius: 25px;
     transition: right .5s;
 }
@@ -388,7 +389,7 @@ img.my-info-signature {
     content: '';
     width: 8px;
     height: 8px;
-    background: #c6646b;
+    background: #f17cac;
     margin-left: -4px;
     top: 8px;
     border-radius: 4px;
@@ -498,7 +499,7 @@ img.my-info-signature {
     display: block;
     width: 0;
     height: 16px;
-    background-color: #c6646b;
+    background-color: #f17cac;
     transition: width .3s;
     position: absolute;
     left: -5%;
@@ -523,7 +524,7 @@ img.my-info-signature {
 }
 
 .sm-clean a span.sub-arrow {
-    color: #c6646b;
+    color: #f17cac;
 }
 
 .main-menu.sm-clean .sub-menu li a {
@@ -814,6 +815,7 @@ h1.entry-title {
     height: auto;
     max-height: none;
     max-width: none;
+    border-radius: 5px;
 }
 
 .grid-sizer,
@@ -841,10 +843,11 @@ h1.entry-title {
     top: 0;
     z-index: 1;
     font-size: 20px;
-    background-color: #f17cac;
+    background-color: rgba(241, 124, 172, 0.9);
     padding: 20px;
     transform: translateX(-100%);
     transition: transform .3s ease;
+    border-radius: 5px;
 }
 
 .grid-item a.item-link:hover .portfolio-text-holder,
@@ -864,24 +867,26 @@ h1.entry-title {
     position: absolute;
     left: 30px;
     bottom: 0;
+    padding-right: 1rem;
 }
 
 .portfolio-text {
-    font-size: 28px;
+    font-size: 1.6rem;
+    font-family: "Aller Bold";
     line-height: 100%;
     font-weight: 700;
-    color: #f17cac;
-    margin-bottom: 0;
+    color: #fff;
+    margin-bottom: 5px;
     padding-bottom: 5px;
 }
 
 .portfolio-cat {
-    font-size: 15px;
-    color: #f17cac;
-    line-height: 100%;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.5;
 }
 
-.portfolio-cat:before {
+/* .portfolio-cat:before {
     content: "";
     display: inline-block;
     width: 25px;
@@ -889,7 +894,7 @@ h1.entry-title {
     background-color: #f17cac;
     vertical-align: 4px;
     margin-right: 5px;
-}
+} */
 
 .portfolio-load-content-holder {
     opacity: 0;
@@ -916,17 +921,16 @@ h1.entry-title {
 }
 
 .close-icon {
-    background-image: url(images/close-left-arrow.png);
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 70px;
+    width: 150px;
+    height: 50px;
     display: inline-block;
-    background-color: rgb(243, 123, 131);
+    background: none;
     border-radius: 5px;
     margin-bottom: 20px;
     background-size: 70px;
     transition: all 0.3s ease;
     cursor: pointer;
+    font-size: .9rem;
 }
 
 .close-icon:hover {
@@ -1399,6 +1403,10 @@ p.contact-submit-holder {
     padding: 2rem;
 }
 
+#contact {
+    padding-bottom: 150px;
+}
+
 
 /* ===================================
     11. Responsive CSS
@@ -1811,6 +1819,10 @@ p.contact-submit-holder {
     .skill-circle-wrapper canvas {
         max-width: none;
         max-height: none;
+    }
+
+    a.button {
+        width: 100%;
     }
 
 }
