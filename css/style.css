@@ -924,6 +924,10 @@ h1.entry-title {
     display: block;
 }
 
+.portfolio-content strong {
+    font-family: "Aller Bold"
+}
+
 .close-icon {
     width: 150px;
     height: 50px;
