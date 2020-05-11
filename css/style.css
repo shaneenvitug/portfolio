@@ -24,17 +24,38 @@
     1. 3rd Part CSS Libraries
 ====================================== */
 
-@import url("css/clear.css");
-@import url("css/sm-clean.css");
-@import url("css/owl.carousel.min.css");
-@import url("css/owl.theme.default.min.css");
-@import url("css/prettyPhoto.css");
-@import url("css/common.css");
+@import url("clear.css");
+@import url("sm-clean.css");
+@import url("owl.carousel.min.css");
+@import url("owl.theme.default.min.css");
+@import url("prettyPhoto.css");
+@import url("common.css");
 
 
 /* ===================================
     2. Global CSS
 ====================================== */
+
+@font-face {
+    font-family: "Aller Light";
+    src: url('../fonts/Aller_Lt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aller";
+    src: url('../fonts/Aller_Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aller Bold";
+    src: url('../fonts/Aller_Bd.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
 
 *,
 ::after,
@@ -42,10 +63,16 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    line-height: 30px;
+    font-family: 'Aller Light', sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
     font-weight: 400;
     color: #a88590;
     background-color: #fff;
@@ -54,7 +81,7 @@ body {
 
 body a {
     text-decoration: none;
-    color: #ffffff;
+    color: #998086;
     transition: color .3s linear;
 }
 
@@ -77,7 +104,7 @@ body img {
     width: 100%;
     height: 100%;
     z-index: 99999;
-    background-color: #362B2E;
+    background-color: #998086;
 }
 
 .doc-loader img {
@@ -98,13 +125,13 @@ p {
 }
 
 .section-info {
-    font-size: 22px;
-    line-height: 35px;
+    font-size: 1.5rem;
+    line-height: 3rem;
 }
 
 a.button {
     display: inline-block;
-    color: #faefff;
+    color: #f37b83;
     border: 2px solid #f37b83;
     text-align: center;
     padding: 12px 38px;
@@ -113,6 +140,7 @@ a.button {
     text-decoration: none;
     border-radius: 50px;
     transition: all .2s linear;
+    margin-right: 1rem;
 }
 
 a.button:active {
@@ -133,7 +161,7 @@ a.button:hover {
 .content-left {
     position: fixed;
     width: 380px;
-    background-color: #362B2E;
+    background-color: #fff;
     height: 100vh;
     z-index: 1;
 }
@@ -186,7 +214,7 @@ a.button:hover {
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
     top: 8px;
-    background-color: #faefff;
+    background-color: #f37b83;
 }
 
 #toggle:before {
@@ -229,7 +257,7 @@ a.button:hover {
     transition: all 0.25s;
     margin-left: 0;
     top: 8px;
-    background-color: #faefff;
+    background-color: #f37b83;
 }
 
 #toggle:hover .menu-line {
@@ -244,6 +272,7 @@ a.button:hover {
     position: relative;
     z-index: 2;
     padding-top: 150px;
+    display: none;
 }
 
 .top-pagination>div {
@@ -257,6 +286,7 @@ a.button:hover {
     position: relative;
     height: 30px;
     color: #c6646b;
+    display: none;
 }
 
 .current-num span {
@@ -265,7 +295,7 @@ a.button:hover {
 }
 
 .total-pages-num {
-    color: #faefff;
+    color: #f37b83;
 }
 
 .pagination-div {
@@ -281,7 +311,7 @@ a.button:hover {
     position: absolute;
     height: 3px;
     width: 100%;
-    background-color: #faefff;
+    background-color: #f37b83;
     top: 12px;
 }
 
@@ -302,10 +332,12 @@ a.button:hover {
     line-height: 100%;
     color: #f37b83;
     letter-spacing: 5px;
+    font-family: "Aller Bold";
 }
 
 .my-info-content {
-    color: #faefff;
+    color: #f37b83;
+    font-size: 1.1rem;
 }
 
 img.my-info-signature {
@@ -373,7 +405,7 @@ img.my-info-signature {
     content: "";
     position: absolute;
     z-index: -1;
-    background-color: #362b2e;
+    background-color: 998086;
     width: 58px;
     height: 80px;
     border-radius: 25px;
@@ -454,7 +486,7 @@ img.my-info-signature {
 .sm-clean a:hover,
 .sm-clean a:focus,
 .sm-clean a:active {
-    color: #ffffff;
+    color: #fff;
     padding: 5px 0;
     font-size: 28px;
     line-height: 50px;
@@ -515,7 +547,7 @@ img.my-info-signature {
 }
 
 .section {
-    background-color: #302729;
+    background-color: #fff6ff;
     position: relative;
     padding-top: 150px;
 }
@@ -559,7 +591,7 @@ h2.section-title {
 .home-right-part {
     flex: 1 0 0;
     height: 100%;
-    background-image: url(images/me.png);
+    background-image: url(../images/me.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -575,10 +607,13 @@ h1.entry-title {
     line-height: 94px;
     font-weight: 800;
     color: #f37b83;
+    font-family: "Aller Bold";
 }
 
 .site-info {
     margin-top: 25px;
+    line-height: 2.2;
+    font-size: 1.3rem;
 }
 
 .social-links {
@@ -715,7 +750,7 @@ h1.entry-title {
 }
 
 .category-filter-list {
-    background-color: #362b2e;
+    background-color: 998086;
     padding: 24px 20px;
     width: 110px;
     display: none;
@@ -724,7 +759,7 @@ h1.entry-title {
     top: 15px;
     font-size: 13px;
     line-height: 22px;
-    color: #faefff;
+    color: #f37b83;
     z-index: 1;
     cursor: pointer;
     transition: opacity .5s, transform .5s;
@@ -832,14 +867,14 @@ h1.entry-title {
     font-size: 28px;
     line-height: 100%;
     font-weight: 700;
-    color: #faefff;
+    color: #f37b83;
     margin-bottom: 0;
     padding-bottom: 5px;
 }
 
 .portfolio-cat {
     font-size: 15px;
-    color: #faefff;
+    color: #f37b83;
     line-height: 100%;
 }
 
@@ -848,7 +883,7 @@ h1.entry-title {
     display: inline-block;
     width: 25px;
     height: 1px;
-    background-color: #faefff;
+    background-color: #f37b83;
     vertical-align: 4px;
     margin-right: 5px;
 }
@@ -1032,7 +1067,7 @@ div.pp_default .pp_description {
 
 .owl-theme .owl-dots .owl-dot span {
     margin: 0;
-    background-color: #faefff;
+    background-color: #f37b83;
     transition: all .3s ease;
     width: 18px;
     height: 18px;
@@ -1046,7 +1081,7 @@ div.pp_default .pp_description {
 }
 
 .owl-theme .owl-dots .owl-dot:hover span {
-    background-color: #faefff;
+    background-color: #f37b83;
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
@@ -1072,7 +1107,7 @@ li.timeline-event {
 }
 
 li.timeline-event:hover {
-    color: #faefff;
+    color: #f37b83;
 }
 
 li.timeline-event:before {
@@ -1108,6 +1143,12 @@ li.timeline-event span.timeline-circle:after {
 
 li.timeline-event:hover span.timeline-circle:after {
     opacity: 1;
+}
+
+.timeline-event h5 {
+    font-size: 1.3rem;
+    padding-bottom: 12px;
+    line-height: 2.1rem;
 }
 
 span.timeline-circle {
@@ -1349,6 +1390,10 @@ p.contact-submit-holder {
     font-size: 14px;
     line-height: 25px;
     opacity: 1;
+}
+
+.image-slider-wrapper {
+    padding: 2rem;
 }
 
 
