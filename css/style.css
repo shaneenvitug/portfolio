@@ -1273,14 +1273,14 @@ p.skill-circle-text {
     font-weight: 700;
     width: 100px;
     float: right;
-    color: #554247;
+    color: #f17cac;
     letter-spacing: -1px;
 }
 
 .skill {
     width: 100%;
     height: 12px;
-    background-color: #554247;
+    background-color: #F9F0FF;
     margin-bottom: 15px;
 }
 
