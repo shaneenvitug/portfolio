@@ -617,6 +617,10 @@ h1.entry-title {
     font-size: 1.3rem;
 }
 
+.site-info span {
+    font-family: "Aller Bold";
+}
+
 .social-links {
     margin-top: 10vh;
     margin-bottom: -5px;
